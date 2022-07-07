@@ -1,1 +1,93 @@
+:root {
+    --green: #33ffd6;
+    --white: #ffffff;
+    --black: #000000;
+}
 
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --bntFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --bntFontColor: var(--black);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Helvetica;
+}
+
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: relative;
+    place-items: inherit;
+    float: right;
+    top: -110px;
+    left: 250 ;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+
+
+/* style the search field */
+form{
+    padding: 1.7px;
+    font-size: 10px;
+    border: 1px solid grey;
+    float: right;
+    width: 40%;
+    background: #f8fae9;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+form button{
+    float: right;
+    width: 15%;
+    padding: 10px;
+    background: #2196f3;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 20px;
+}
+
+form button :hover{
+    background: #0b7dda;
+    
+    
+}
+
+form::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+    float: right;
+}
